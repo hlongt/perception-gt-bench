@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/*
+!outputs/.gitkeep
+build/
+*.dll
+*.so
+*.pyd
+*.o
+*.obj
+*.pdb
+*.exp
+*.lib
+.ipynb_checkpoints/
+.DS_Store

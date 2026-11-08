@@ -1,0 +1,39 @@
+{
+  "seed": 20261107,
+  "camera": {
+    "width": 320,
+    "height": 192,
+    "fx": 250.0,
+    "fy": 250.0,
+    "cx": 160.0,
+    "cy": 96.0,
+    "baseline": 0.24
+  },
+  "dataset": {
+    "slices": ["normal", "low_texture", "dynamic", "low_light", "motion_blur", "far"],
+    "frames_per_slice": 4,
+    "validation_frames": 8
+  },
+  "stereo": {
+    "max_disparity": 64,
+    "window": 5,
+    "lr_threshold": 1.0,
+    "min_confidence": 0.12,
+    "subpixel": true
+  },
+  "sfm": {
+    "num_keypoints": 350,
+    "reproj_threshold": 1.5,
+    "match_window": 5
+  },
+  "fusion": {
+    "mad_k": 3.0,
+    "min_sources": 1,
+    "min_confidence": 0.10
+  },
+  "benchmark": {
+    "topk_badcases": 10,
+    "iou_threshold": 0.25
+  },
+  "output_dir": "outputs"
+}
